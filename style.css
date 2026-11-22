@@ -30,9 +30,15 @@ blockquote{border-left:3px solid var(--brass);margin-left:0;padding-left:1rem;co
 .pager a:hover{border-color:var(--brass)}
 .pager a:active{transform:translateY(3px);box-shadow:0 0 0 var(--edge);background:var(--press)}
 .pager .next{margin-left:auto;text-align:right}
+.pager-top{display:flex;justify-content:space-between;gap:.75rem;margin:.25rem 0 1.25rem;font:600 .85rem/1 system-ui,sans-serif}
+.pager-top a{padding:.45rem .75rem;border:1px solid var(--line);border-radius:6px;background:var(--band);color:var(--granite);text-decoration:none;box-shadow:0 3px 0 var(--edge);transition:transform .06s,box-shadow .06s}
+.pager-top a:hover{border-color:var(--brass)}
+.pager-top a:active{transform:translateY(3px);box-shadow:0 0 0 var(--edge);background:var(--press)}
+.pager-top .next{margin-left:auto}
+.pager-top a:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 .pager small{display:block;margin-bottom:.2rem;color:var(--quiet);font-weight:400;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
 .list a:focus-visible,.pager a:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){.list li,.pager a{transition:none}}
+@media (prefers-reduced-motion:reduce){.list li,.pager a,.pager-top a{transition:none}}
 .also{font:.95rem/1.4 system-ui,sans-serif}
 .hero{margin:1.25rem 0 0;border-radius:4px;overflow:hidden}
 .hero img{display:block;width:100%;aspect-ratio:2.15/1;object-fit:cover;object-position:center 45%}
