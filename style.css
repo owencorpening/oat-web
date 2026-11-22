@@ -53,6 +53,12 @@ main>*:nth-child(3){animation-delay:.16s}
 .list li:nth-child(n+4){animation-delay:.4s}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.list li.has-thumb{display:flex;gap:.9rem;align-items:flex-start}
+.list li.has-thumb>div{min-width:0}
+.thumb{flex:none;display:block;width:72px;height:72px;border-radius:6px;object-fit:cover;border:1px solid var(--edge);box-shadow:0 1px 0 var(--edge)}
+.thumb.none{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--stone),var(--bg));color:var(--brass);font:600 .8rem/1 Georgia,"Times New Roman",serif;letter-spacing:.12em}
+.cover{margin:1.25rem 0 0}
+.cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;box-shadow:0 2px 0 var(--edge),0 8px 20px var(--glow)}
 .also{font:.95rem/1.4 system-ui,sans-serif}
 .hero{margin:1.25rem 0 0;border-radius:4px;overflow:hidden}
 .hero img{display:block;width:100%;aspect-ratio:2.15/1;object-fit:cover;object-position:center 45%}
