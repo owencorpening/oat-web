@@ -77,6 +77,9 @@ main>*:nth-child(3){animation-delay:.16s}
 .about .creed{font-style:italic;color:var(--granite)}
 .about .elsewhere{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.75rem;font:600 .95rem/1 system-ui,sans-serif}
 .about .elsewhere a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border:1px solid var(--line);border-radius:6px;background:var(--band);color:var(--granite);text-decoration:none;box-shadow:0 3px 0 var(--edge)}
+.about .cta{display:inline-flex;align-items:center;min-height:44px;padding:0 1.25rem;border:2px solid var(--brass);border-radius:6px;background:var(--band);color:var(--granite);text-decoration:none;font:600 1rem/1 system-ui,sans-serif;box-shadow:0 3px 0 var(--edge)}
+.about .cta:hover{background:var(--press)}
+.about .cta:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 .about .elsewhere a:hover{border-color:var(--brass);box-shadow:0 3px 0 var(--edge),0 6px 16px var(--glow)}
 .about .elsewhere a:active{transform:translateY(3px);box-shadow:0 0 0 var(--edge);background:var(--press)}
 footer .links{display:block;margin-top:.5rem}
